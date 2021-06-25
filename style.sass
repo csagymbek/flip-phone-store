@@ -1,0 +1,83 @@
+$main-color: #333
+$font-color: #fff
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: sans-serif
+
+.title
+    text-align: center
+    margin: 40px auto 30px
+    h1
+        margin-bottom: 1rem
+
+.flip-card
+    width: 300px
+    height: 450px
+    margin: auto
+    &:hover
+        .flip-card-inner
+            transform: rotateY(180deg)
+
+.flip-card-inner
+    position: relative
+    height: 100%
+    transition: transform 0.6s
+    transform-style: preserve-3d
+
+.flip-card-front
+    position: absolute
+    left: -30px
+    height: 100%
+    width: 100%
+    backface-visibility: hidden
+
+.flip-card-back
+    background: $main-color
+    color: $font-color
+    position: absolute
+    height: 50vh
+    width: 100%
+    transform: rotateY(180deg)
+    z-index: 1
+    border-radius: 8px
+    backface-visibility: hidden
+
+.back-header
+    height: 35%
+    text-align: center
+    img
+        width: 50%
+        margin-top: 20px
+
+.back-footer
+    text-align: justify
+    padding: 0 2rem
+    height: 55%
+    h2
+        font-size: 1.5rem
+        font-weight: 300
+        margin-bottom: 10px
+    p
+        line-height: 1.5
+        margin-bottom: 10px
+    i
+        margin: 0px auto 8px
+    a
+        text-decoration: none
+        color: $font-color
+        width: 120px
+        display: inline
+        margin: 5px
+        text-align: center
+        padding: .5em 1em
+        border: 1px solid $font-color
+        &:hover
+            background: $font-color
+            border: $main-color
+            color: $main-color
+
+.stars
+    margin-bottom: 30px
