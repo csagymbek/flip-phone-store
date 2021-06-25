@@ -111,4 +111,21 @@
 .stars {
   margin-bottom: 30px;
 }
+
+.logo {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 150px;
+  width: 250px;
+  position: absolute;
+  bottom: 20%;
+  left: 47%;
+  letter-spacing: .5em;
+  font-size: 10rem;
+  color: transparent;
+  background: url("https://media.giphy.com/media/kkoRgXbTCPY3K/giphy.gif");
+  background-position: center;
+  -webkit-background-clip: text;
+}
 /*# sourceMappingURL=style.css.map */
